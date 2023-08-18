@@ -16,6 +16,30 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "baseUrl": "./src",
+    "paths": {
+      "@assets/*": [
+        "./assets/*"
+      ],
+      "@components/*": [
+        "./components/*"
+      ],
+      "@config/*": [
+        "./config/*"
+      ],
+      "@hooks/*": [
+        "./hooks/*"
+      ],
+      "@ioc/*": [
+        "./ioc/*"
+      ],
+      "@pages/*": [
+        "./pages/*"
+      ],
+      "@utils/*": [
+        "./utils/*"
+      ]
+    },
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
