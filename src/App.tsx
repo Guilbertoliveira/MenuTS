@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <Cardapio /> testcvfdsfs
+      <Cardapio />
     </>
   )
 }
