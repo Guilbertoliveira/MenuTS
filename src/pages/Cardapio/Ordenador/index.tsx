@@ -4,13 +4,21 @@ import { useState } from 'react'
 import classNames from 'classnames'
 import { BsArrowDownSquareFill, BsArrowUpSquareFill } from 'react-icons/bs'
 
-export default function Ordenador() {
+interface Props {
+    setOpcao: React.Dispatch<React.SetStateAction<string>>
+    opcao: string
+}
 
+export default function Ordenador({ opcao, setOpcao }: Props) {
     const [aberto, setAberto] = useState(false)
+    const nomeOpcao = opcao && opcoes.find((findOpcao) => findOpcao.value === opcao)?.nome
 
     return (
-        <button className={styles.ordenador} onClick={() => setAberto(!aberto)} onBlur={() => setAberto(false)}>
-            <span>Ordenar Por</span>
+        <button className={classNames({
+            [styles.ordenador]: true,
+            [styles["ordenador--ativo"]]: opcao !== ""
+        })} onClick={() => setAberto(!aberto)} onBlur={() => setAberto(false)}>
+            <span>{opcao ? nomeOpcao : 'Ordenado Por'}</span>
             {aberto ? <BsArrowUpSquareFill size={20} /> : <BsArrowDownSquareFill size={20} />}
             <div className={classNames({
                 [styles.ordenador__options]: true,
@@ -18,7 +26,7 @@ export default function Ordenador() {
             })}>
                 {opcoes.map((opcao) => {
                     return (
-                        <div className={styles.ordenador__option} key={opcao.value}>
+                        <div className={styles.ordenador__option} key={opcao.value} onClick={() => setOpcao(opcao.value)}>
                             {opcao.nome}
                         </div>
                     )
