@@ -34,3 +34,11 @@ npm install normalize.css
 I had problems related to absolute paths where I had to use stackoverflow
 
 https://stackoverflow.com/questions/68241263/absolute-path-not-working-in-vite-project-react-ts
+
+
+
+' - utilizei o vite no lugar do CRA (create-react-app), pois a propria documentação sugere o mesmo
+  - melhoria na responsividade do site
+  - personalização na estilização
+  - instalaçao de bots para auxiliar no projeto: otmização de imagens e manter as dependencias ok
+  
