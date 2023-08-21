@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import Cardapio from './pages/Cardapio'
 
 function App() {
