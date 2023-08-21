@@ -1,15 +1,24 @@
 import styles from './Ordenador.module.scss'
 import opcoes from './Opcoes.json'
-
+import { useState } from 'react'
+import classNames from 'classnames'
+import { BsArrowDownSquareFill, BsArrowUpSquareFill } from 'react-icons/bs'
 
 export default function Ordenador() {
+
+    const [aberto, setAberto] = useState(false)
+
     return (
-        <button className={styles.ordenador}>
+        <button className={styles.ordenador} onClick={() => setAberto(!aberto)} onBlur={() => setAberto(false)}>
             <span>Ordenar Por</span>
-            <div className={styles.ordenador__options}>
+            {aberto ? <BsArrowUpSquareFill size={20} /> : <BsArrowDownSquareFill size={20} />}
+            <div className={classNames({
+                [styles.ordenador__options]: true,
+                [styles["ordenador__options--ativo"]]: aberto
+            })}>
                 {opcoes.map((opcao) => {
                     return (
-                        <div className={styles.ordenado__option} key={opcao.value}>
+                        <div className={styles.ordenador__option} key={opcao.value}>
                             {opcao.nome}
                         </div>
                     )

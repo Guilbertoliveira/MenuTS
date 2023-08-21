@@ -14,22 +14,31 @@
     min-width: 240px;
     padding: 0 40px;
     position: relative;
+    transition: background-color 0.3s, color 0.3s;
+    /* Adicione a transição aqui */
 
     &--ativo {
         background-color: $blue;
         color: white;
+
     }
 
     &__options {
-        display: none;
         position: absolute;
         left: 0;
         flex-direction: column;
         top: 100%;
         width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transform: translateY(-5%);
 
         &--ativo {
             display: flex;
+            max-height: none;
+            transform: translateY(0);
+            transition: 1s;
+            background-color: $dark-grey;
         }
     }
 
@@ -48,7 +57,7 @@
         &--ativo {
             background-color: $blue;
             cursor: pointer;
-            color: white;
+            color: $light-grey;
         }
     }
 }
