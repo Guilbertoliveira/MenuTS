@@ -28,7 +28,7 @@ export default function Cardapio() {
                     <Filtros filtro={filtro} setFiltro={setFiltro} />
                     <Ordenador setOpcao={setOpcao} opcao={opcao} />
                 </div>
-                <Itens />
+                <Itens filtro={filtro} busca={busca} opcao={opcao} />
             </section>
         </main>
     )
