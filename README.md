@@ -4,11 +4,19 @@
 <p>Complete project</p>
 
 <h2>Project description</h2>
-<p>project referring to a menu where you can sort and search for dishes</p>
+<p>Project referring to a menu where you can sort and search for dishes</p>
 
 <h2 >Version Mobile</h2>
+<img src="https://github.com/Guilbertoliveira/MenuTS/assets/41201436/763ad9a2-31ed-4a0a-82f7-35abedf50f88">
 
 <h2>Version Desktop</h2>
+<img src="https://github.com/Guilbertoliveira/MenuTS/assets/41201436/84df96fa-4122-4a07-9640-c6cae48c9362">
+
+<h2>Food filters</h2>
+<img src="https://github.com/Guilbertoliveira/MenuTS/assets/41201436/aba19508-1219-46ea-bec6-451d51eb5c38">
+<img src="https://github.com/Guilbertoliveira/MenuTS/assets/41201436/cf7f4c2e-92d5-4199-a29f-6a32fec472b2">
+<img src="https://github.com/Guilbertoliveira/MenuTS/assets/41201436/32940297-308c-46ef-a08b-2c069d511f33">
+
 
 <h2>Technologies used</h2>
 <div>
@@ -53,9 +61,10 @@ I had problems related to absolute paths where I had to use stackoverflow
 https://stackoverflow.com/questions/68241263/absolute-path-not-working-in-vite-project-react-ts
 
 
-
-' - utilizei o vite no lugar do CRA (create-react-app), pois a propria documentação sugere o mesmo
-  - melhoria na responsividade do site
-  - personalização na estilização
-  - instalaçao de bots para auxiliar no projeto: otmização de imagens e manter as dependencias ok
-  
+<h2>additions made by me</h2>
+<ol>
+<li>I used vite instead of CRA (create-react-app), because the documentation itself suggests the same</li>
+<li>Improved website responsiveness, it's not 100% yet</li>
+<li>customization in styling</li>
+<li>>installation of bots to assist in the project: image optimization and keeping dependencies ok</li
+</ol>
