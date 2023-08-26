@@ -24,11 +24,11 @@
 </div> 
 
 <h2> Project link </h2>
+<a href="https://menu-ts.vercel.app/">Vercel Link</a>
+
 
 <h2>Contributing</h2>
 
-
-Contributing
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 Fork the Project
 Create your Feature Branch (git checkout -b feature/AmazingFeature)
